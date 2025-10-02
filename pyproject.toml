@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oidc-lint"
+version = "0.1.0"
+description = "Hard-hitting OAuth/OIDC misconfig scanner + passkey readiness check"
+authors = [{name="you", email="you@example.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27.0",
+    "idna>=3.4"
+]
+[project.scripts]
+oidc-lint = "oidc_lint.cli:main"
