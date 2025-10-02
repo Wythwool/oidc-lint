@@ -4,7 +4,7 @@
 
 **Usage**
 ```bash
-pipx install .       # or: pip install .
+pipx install . # or: pip install .
 oidc-lint https://accounts.example.com --json-out report.json
 cat report.json | jq .
 ```
